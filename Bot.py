@@ -113,7 +113,7 @@ for i in range(3):
         pre_view = chrome.find_element(By.XPATH, '//*[@id="page-main"]/div/div[10]/div/div/cosmos-mode-7-14-0/div[2]/div/div[2]/div/div[2]/cosmos-button-7-14-0')
         sleep(1)
         pre_view.click()
-        sleep(5)
+        sleep(10)
 
         # pagina 9
         enviar = chrome.find_element(By.XPATH, '//*[@id="preview-container"]/div[2]/div[3]/cosmos-button-7-14-0[1]')
