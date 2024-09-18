@@ -21,7 +21,7 @@ formulario_telefone = "5521999999999"
 
 
 #loop de teste dps só trocar por um while True
-for i in range(3):
+while True:
     try:
         # Cria uma instancia do navegador chrome
         chrome = webdriver.Chrome()
@@ -172,11 +172,12 @@ for i in range(3):
 
         # #submeter
         # pyautogui.click(0,0,duration=1) #submeter
-
-        print("encerrado!")
+        
         sleep(3)
         # Fecha a janela do chrome
         chrome.quit()
 
+
+    # caso a tela demore muito para carregar
     except:
-        pass
+        chrome.quit()
